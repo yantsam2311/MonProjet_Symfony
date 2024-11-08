@@ -1,8 +1,25 @@
 
 
-<nav>
-    <ul>
-        <li><a href="{{ path('home') }}">Accueil</a></li>
+<nav class="bg-gray-800">
+    <div class="flex">
+     <ul>
+        <li><a href="{{ path('home') }}" class="text-lg hover:text-indigo-700">Accueil</a></li>
     </ul>
+        	<li>
+				<a href={{path('profil')}} class="text-lg hover:text-indigo-700">Profil</a>
+			</li>
+
+            <li>
+				<a href={{path('app_login')}} class="text-lg hover:text-indigo-700">login</a>
+			</li>
+             <li>
+				<a href={{path('app_logout')}} class="text-lg hover:text-indigo-700">logout</a>
+			</li>
+    </div>
+
+   
+ 
 </nav>
+
+ 
 
