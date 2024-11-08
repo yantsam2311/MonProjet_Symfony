@@ -1,0 +1,15 @@
+{% extends 'pages/layout.html.twig' %}
+
+{% block main %}
+
+<h1>Page de connexion</h1>
+
+{{form_start(loginForm)}}
+    {{ form_widget(loginForm.email, {'full_name':'email', 'value': last_email}) }}
+    {{ form_errors(loginForm.email) }}
+
+    {{ form_widget(loginForm.password, {'full_name':'password'}) }}
+    {{ form_errors(loginForm.password) }}
+
+{{ form_end(loginForm) }}
+{% endblock %}
